@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Built-By: ELCOT
+Build-Jdk: 16.0.1
+Implementation-Title: jwtDemo
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: es.softtek
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-boot
+ -starter-parent/jwtDemo
+Created-By: Maven Integration for Eclipse
+

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="
+                http://www.springframework.org/schema/beans 
+                http://www.springframework.org/schema/beans/spring-beans.xsd">
+ 
+        
+     <bean id="bmw" class="com.marticus.BMW" /> 
+     <bean id="porsche" class="com.marticus.porsche" />
+     <bean id="jaguar" class="com.marticus.Jaguar" />
+     
+
+     <bean id="carrent" class="com.marticus.carRent" scope="prototype" >
+     	   <property name="rent" ref="porsche" />     	   
+     </bean>      
+      
+</beans>
