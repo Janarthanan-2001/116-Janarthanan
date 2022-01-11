@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="axis.css">
+    <title>Document</title>
+    <script>
+        $(document).ready(function(){
+           
+            $('.pan').hide();
+            $('.pin').hide();
+
+            $('#showlog').click(function(){
+                $('.log').show();
+                $('.pan').hide();
+                $('.pin').hide();
+            });
+            $('#showpan').click(function(){
+                $('.pan').show();
+                $('.log').hide();
+                $('.pin').hide();
+            });
+            $('#showpin').click(function(){
+                $('.pin').show();
+                $('.log').hide();
+            $('.pan').hide();
+            });
+
+        });
+
+    </script>
+</head>
+<body>
+   <h1>AXIS BANK</h1>
+    <div class="axis-form">
+        <form action="#">
+            <div class="navbar navbar-default">
+                <div class="container-fluid">
+                    <ul class="nav navbar-nav">
+                        <li id="showlog" ><a href="#">Login ID</a></li>
+                        <li id="showpan"><a href="#">Debit Card No</a></li>
+                        <li id="showpin"><a href="#">mPIN</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="log">
+                <form>
+                    <fieldset>
+                        <div class="log-form">                           
+                            <table >
+                                <tr>                                   
+                                    <td><input type="text" id="user" name="user" placeholder="user name" required/></td>                  
+                                </tr>
+                                <tr>                                 
+                                    <td><input type="password" name="pass" id="pass" placeholder="password" required/></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="#" target="_self">
+                                        <input type="submit" value="Login"></a>
+                                    </td>
+                                </tr>
+                            </table>         
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="pan">
+                <form>
+                    <fieldset>
+                        <div class="pan-form">                        
+                            <table >
+                                <tr>                                
+                                    <td><input type="number" id="num" name="num" placeholder="Card No" required/></td>                  
+                                </tr>
+                                <tr>                                  
+                                    <td><input type="number" name="num1" id="num1" placeholder="PAN No" required/></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="#" target="_self">
+                                        <input type="submit" value="Login"></a>
+                                    </td>
+                                </tr>
+                            </table>         
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="pin">
+                <form>
+                    <fieldset>
+                        <div class="pin-form">                         
+                            <table >
+                                <tr>
+                                    <td><label for="pinno"> Select an option</label></td>
+                                    <tr>
+                                        <td>
+                                            <input type="radio" name="gender" id="M" value="Male"> Customet ID                                       
+                                            <input type="radio" name="gender" id="F" value="Female"> Rigister mobile No                                      
+                                           </td>
+                                    </tr>                                   
+                                </tr>
+                                <tr>                              
+                                    <td><input type="number" id="num" name="num" placeholder="Card No" required/></td>                  
+                                </tr>
+                                <tr>                                    
+                                    <td><input type="number" name="num1" id="num1" placeholder="PAN No" required/></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="#" target="_self">
+                                        <input type="submit" value="Login"></a>
+                                    </td>
+                                </tr>
+                            </table>         
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

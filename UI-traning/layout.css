@@ -1,0 +1,45 @@
+body{
+     background-image: repeating-linear-gradient(30deg,red,blue,green,yellow); 
+
+}
+img{
+    height: 300px;
+    width: 300px;
+    -webkit-box-reflect:right;
+
+}
+
+table{
+border:2px solid red;
+width: 100%;
+border-collapse: collapse;
+}
+  #row1col1
+{
+
+width: fit-content
+
+}  
+
+
+label{
+
+    font-size: larger;
+    font-weight: bolder;
+    color:tomato
+}
+#div1{
+/* float: left; */
+height: 600px;
+width: 200px;
+background-color:burlywood;
+
+}
+#di{
+    width: 300px;
+    height: 300px;
+}
+#di.img{
+    width: 300px;
+    height: 300px;
+}

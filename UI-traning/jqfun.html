@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Document</title>
+    <script>
+        $(document).ready(function(){
+            // $('#b1').click(function(){
+            //     var text=$('body').text();
+            //     alert('text()' + text);
+            // });
+            // $('#b2').click(function(){
+            //     var html=$('body').html();
+            //     alert('html()' + html);
+            // });
+           
+            // $('#b3').click(function(){
+            //     var val=$('body').val();
+            //     alert('val()' + val);
+            // });
+            var t=$('p').text();
+            alert('The paragraph contains the following ' +  t);
+            var r=$('p').attr('id');
+            alert('It is in the paragraph id ' + r);
+        });
+    </script>
+</head>
+<body>
+    <input type="text" id="t1" value="text">
+    <p id="p1">this is <b> para</b></p>
+    <p id="p2">this is second <b> para</b></p>
+    <!-- <button id="b1">Click Here</button>
+    <button id="b2">Click Here</button>
+    <button id="b3">Click Here</button> -->
+    
+</body>
+</html>

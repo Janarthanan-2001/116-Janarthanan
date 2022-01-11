@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="details"></p>
+    <p id="fulldetail"></p>
+    <script>
+        let carname="honda";
+        const Student={
+            RollNo:"1",
+            firstname:"Jana",
+            Grade:"A-grade",
+            Sub1:"Tamil",
+            Sub2:"English",
+            city:"chennai",
+            
+            allDetails:function()
+            {
+                return this.firstname + this.city +this.vehname + carname;
+            }
+        };
+        document.getElementById("details").innerHTML=Student.RollNo + " " +Student.firstname + " " + Student.Grade + " " + Student.city + " " + Student.Sub1 + " " + Student.Sub2;
+        document.getElementById("fulldetail").innerHTML=person.allDetails();
+       
+    </script>
+</body>
+</html>

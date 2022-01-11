@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="personalinfo.css">
+    <title>Document</title>
+    <script>
+        $(document).ready(function(){
+            $('.full').hide();
+            // $('.educat').hide();
+            // $('.hob').hide();
+            $('.dropdown-toggle').mouseover(function(){
+                $('.dropdown-menu').show();
+                
+            });
+            $('.dropdown-menu').mouseleave(function(){
+                $('.dropdown-menu').hide()
+            });
+            $('.#b').click(function(){
+                $('.bio').show();
+            });
+            $('.#e').click(function(){
+                $('.educat').show();
+            });
+            $('.#h').click(function(){
+                $('.hob').show();
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="well well-sm">PERSONAL INFORMATION</div>
+    <div class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">JANARTHANAN</a>
+              </div>
+            <ul class="nav navbar-nav"> 
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Personal Info
+                    <ul class="dropdown-menu">
+                      <li id="b"><a href="#">Bio Data</a></li>
+                      <li id="e"><a href="#">Education</a></li>
+                      <li id="h"><a href="#">Hobbies</a></li>
+                    </ul>
+                  </li>
+                <li id="exp"><a href="#">Experience</a></li>
+                <li id="ab"><a href="#">about</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="full">
+        <div class="bio">
+            <div class="table">
+                <table>
+                    <tr>
+                        <td>Name : </td>
+                        <td> Janarthanan</td>
+                    </tr>
+                    <tr>
+                        <td>E-mail :</td>
+                        <td>jana@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Phone number : </td>
+                        <td> 1234567890</td>
+                    </tr>
+                    <tr>
+                        <td>DOB : </td>
+                        <td> 29/05/2001</td>
+                    </tr>
+                    <tr>
+                        <td>Blood group : </td>
+                        <td> A(-)ve</td>
+                    </tr>
+                    <tr>
+                        <td>Age : </td>
+                        <td> 21</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="educat">
+            <table>
+                <tr>
+                    <td>SSLC :</td>
+                    <td>Govt Higher Secondary School with 87.8% percentage</td>
+                </tr>
+                <tr>
+                    <td>HSC : </td>
+                    <td> Govt Higher Secondary School with 75% percentage</td>
+                </tr>
+                <tr>
+                    <td>BCA : </td>
+                    <td> University Of madras with 75% percentage</td>
+                </tr>
+            </table>
+        </div>
+        <div class="hob">
+            <table>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>Cricket</li>
+                            <li>Volley Ball</li>
+                            <li>Chess</li>
+                            <li>Cards</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

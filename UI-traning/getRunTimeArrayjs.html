@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const arr=[];
+        
+        function populateDataInArray()
+        {
+            alert("Called");
+            arr[0]=10;
+        }
+        function addElementToArray()
+        {
+            var i=document.getElementById("val1").value;
+           // alert(i);
+            arr.push(i);
+        }
+
+        function ShowElementByIndex()
+        {
+            var i=document.getElementById("ind").value;
+            var data=arr[i];
+            alert(data);
+        }
+        function popdata()
+        {
+            var data=arr.pop();
+            alert(data);
+        }
+        function showArrayElements()
+        {
+            var t='<ol type="a">';
+            for (let index = 0; index < arr.length; index++) 
+            {
+                t+='<li>' + arr[index] + '</li>';
+
+            }
+            t+='</ol>';
+
+            document.getElementById('div1').innerHTML=t;
+        }
+        function replace()
+        {
+            // let arr1=[12,23,45,56,67,78];
+            arr.splice(1,0,"55");
+            document.getElementById("rlc").innerHTML=arr;
+        }
+      
+    </script>
+</head>
+<body>
+      <form>
+        <!-- <input type="button" onclick="populateDataInArray()" value="Populate"/> -->
+        <br>
+        <label for="i">Enter Element value</label>
+        <input type="text" name="val1" id="val1" />
+        <input type="button" value="Add" onclick="addElementToArray()"/>
+        <br/>
+        <input type="text" name="ind" id="ind" />
+        <input type="button" value="GetByElement" onclick="ShowElementByIndex()"/>
+        <br/>
+        <input type="button" value="Pop array" onclick="popdata()"/>
+        <br/>
+        <input type="button" value="Show"  onclick="showArrayElements()"/>
+        <div id="div1"></div>
+        <hr/>
+        <label for="f">Relace element</label>
+        <input type="button" value="Replace" onclick="replace()"/>
+        <br>
+        <label for="f1">updated array element are..</label>
+        <div id="rlc"></div>
+    </form>
+</body>
+</html>

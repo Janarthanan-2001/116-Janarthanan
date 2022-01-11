@@ -1,0 +1,126 @@
+body{
+    text-align: center;
+    margin-top: 100px;
+    background: rgb(189, 114, 224);
+}
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.navbar{
+    background:rgb(209, 147, 204); 
+}
+.axis-form{
+    
+    align-content: center;
+    display: inline-block;
+    width: 400px;
+    height: 400px;
+    padding: 15px;
+    background: rgb(209, 147, 204); 
+}
+
+.log.pan.pin{
+    align-content: center;
+    width: 500px;
+    height: 500px;
+    padding: auto;
+}
+.log-form.pan-form.pin-form{
+    width: 400px;
+    height: 500px;
+    padding: 35px;
+}
+.log-form input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.pan-form input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.pin-form input{
+    width: 50px;
+    margin-bottom: 20px;
+}
+.log-form input[type="text"],input[type="password"]{
+    text-align: center;
+    align-content: center;
+    border: none;
+    background: transparent;
+    outline: none;
+    width: fit-content;
+    height: 60px;
+    display: block;
+    color: wheat;
+}
+.pan-form input[type="number"],input[type="number"]{
+    text-align: center;
+    align-content: center;
+    border: none;
+    background: transparent;
+    outline: none;
+    width: fit-content;
+    height: 60px;
+    display: block;
+    color: wheat;
+}
+.pin-form input[type="number"],input[type="number"]{
+    text-align: center;
+    align-content: center;
+    border: none;
+    background: transparent;
+    outline: none;
+    width:fit-content;
+    height: 60px;
+    display: block;
+    color: wheat;
+}
+.log-form input[type="submit"]{
+    border: none;
+    background: rgb(212, 107, 58);
+    outline: none;
+    height: 40px;
+    width: 80px;
+    border-radius: 20px;
+    color: white;
+    font-size: 15px;
+    
+}
+.log-form input[type="submit"]:hover {
+    cursor: pointer;
+    background: rgba(66, 134, 197, 0.945);
+    color: white;
+}
+.pan-form input[type="submit"]{
+    border: none;
+    background: rgb(212, 107, 58);
+    outline: none;
+    height: 40px;
+    width: 80px;
+    border-radius: 20px;
+    color: white;
+    font-size: 15px;
+    
+}
+.pan-form input[type="submit"]:hover {
+    cursor: pointer;
+    background: rgba(66, 134, 197, 0.945);
+    color: white;
+}
+.pin-form input[type="submit"]{
+    border: none;
+    background: rgb(212, 107, 58);
+    outline: none;
+    height: 40px;
+    width: 80px;
+    border-radius: 20px;
+    color: white;
+    font-size: 15px;
+    
+}
+.pin-form input[type="submit"]:hover {
+    cursor: pointer;
+    background: rgba(66, 134, 197, 0.945);
+    color: white;
+}

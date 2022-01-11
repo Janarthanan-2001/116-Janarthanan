@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+<body>
+   
+    <form>
+        <fieldset>
+            <legend>Login</legend>
+            <table> 
+                <tr>
+                    <td><label for="user">User Name</label></td>
+                    <td><input type="text" id="user" name="user"/> </td>                  
+                </tr>
+                <tr>
+                   <Td><label for="Email">EmailId</label></Td>
+                   <td><input type="email" name="Email" id="Email"></td>
+                </tr>
+                <tr>
+                    <td><label for="pass">Password</label></td>
+                    <td><input type="password" name="pass" id="pass"></td>
+                </tr>
+                <tr>
+                    <td><label for="gender"> Select Gender</label></td>
+                    <td>
+                        <input type="radio" name="gender" id="M" value="Male">Male
+                        <input type="radio" name="gender" id="F" value="Female">Female
+                        <input type="radio" name="gender" id="O" value="Others">Others
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="d">Date</label></td>
+                    <td><input type="date" name="d" id="d"></td>
+                </tr>
+                <tr>
+                    <td><label for="t">time</label></td>
+                    <td><input type="time" name="t" id="t"></td>
+                </tr>
+                <tr>
+                    <td><label for="dt">Date & Time</label></td>
+                    <td><input type="datetime-local" name="dt" id="dt"></td>
+                </tr>
+                <tr>
+                    <td><label for="m1">Month</label></td>
+                    <td><input type="month" name="m1" id="m1"></td>
+                </tr>
+                <tr>
+                    <td><label for="w">Week</label></td>
+                    <td><input type="week" name="w" id="w"></td>
+                </tr>
+                <tr>
+                    <td><label for="c">Colors</label></td>
+                    <td><input type="color" name="c" id="c"></td>
+                </tr>
+                <tr>
+                    <td><label for="f">import files</label></td>
+                    <td><input type="file" name="f" id="f" multiple></td>
+                </tr>
+                <tr>
+                    <td><label for="comurl">Company URL</label></td>
+                    <td><input type="url" name="comurl" id="comurl"></td>
+                </tr>
+                <tr>
+                    <td><label for="paymentmodes">Payment Modes</label></td>
+                    <td>
+                        <input type="checkbox" name="COD" id="paymentmodes" value="COD">
+                        <label for="COD">Cash On Delivery</label>
+                        
+                        <input type="checkbox" name="DC" id="paymentmodes" value="Debit card">
+                        <label for="DC">pay by debit card</label>
+
+                        <input type="checkbox" name="CC" id="paymentmodes" value="credit card">
+                        <label for="CC">pay by credit card</label>    
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="lang">Select Lanaguage</label></td>
+                    <td><select name="languages" id="lang">
+                         <optgroup label="Select First Group"> 
+                            <option value="C">C Programming</option>
+                            <option value="C++">C++ Programming</option>
+                            <option value="Java">Java Programming</option>
+                       </optgroup> 
+                       <optgroup label="OS Group">
+                        <option value="Linux">Linux</option>
+                        <option value="Windows">Windows</option>
+                        <option value="Android">Android</option>
+                
+                       </optgroup>
+                
+                    </select></td>
+                </tr>
+                <tr><td>Meter Element</td>
+                    <td>
+                        <meter id="md" value="2" min="0" max="10">2 out of 10</meter>
+                    </td>
+                </tr>
+             
+                <tr>
+                    <td>
+                        <label for="comm">Enter your comments</label>
+                    </td>
+                    <td>
+                        <textarea cols="20" rows="10"></textarea>
+                    </td>
+                </tr>
+            </table> 
+        </fieldset>           
+    </form>
+    
+</body>
+</html>

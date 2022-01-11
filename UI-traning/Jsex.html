@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <h1>Find String length</h1>
+    <p><mark> starts counting the str length with 1</mark></p>
+    <h3>Original String</h3>
+    <p id="original1"></p>
+    <h3>String Length</h3>
+    <p id="p1"></p>
+    <hr>
+    <h1>slice Method</h1>
+    <p><mark> slect from a given start. up to a (not inclusive) given end  </mark></p>
+    <h3>Original String</h3>
+    <p id="original2"></p>
+    <h3>After Slice " d1=d.slice(3,20);"</h3>
+    <p id="p2"></p>
+    <h4>After slice "d2=d.slice(-20,-7);"</h4>
+    <p id="p3"></p>
+    <h4>After slice "d2=d.slice(-20);"</h4>
+    <p id="p4"></p>
+    <h4>After slice "d2=d.slice(7);"</h4>
+    <p id="p5"></p>
+    <hr>
+    <h1>substr Method</h1>
+    <h3>Original String</h3>
+    <p id="original3"></p>
+    <h3>After substr " s1=d.substr(3,20);"</h3>
+    <p id="p12"></p>
+    <h4>After substr "s2=d.substr(-20,-7);"</h4>
+    <p id="p13"></p>
+    <h4>After substr "s3=d.substr(-20);"</h4>
+    <p id="p14"></p>
+    <h4>After substr "s4=d.substr(7);"</h4>
+    <p id="p15"></p>
+    <script>
+        // var d="jana \"Love\" divya";
+        // alert(d);
+        let d="hellow world hai everything...";
+        // alert(d.slice(-6,-20));
+        var j="jana";
+        j+=("Divya");
+        // alert(j)
+        document.getElementById("original1").innerHTML=j;
+        document.getElementById("p1").innerHTML=j.length;
+        document.getElementById("original2").innerHTML=d;
+        var d1=d.slice(3,20);
+        document.getElementById("p2").innerHTML=d1;
+        var d2=d.slice(-20,-7);
+        document.getElementById("p3").innerHTML=d2;
+        var d3=d.slice(-20);
+        document.getElementById("p4").innerHTML=d3;
+        var d4=d.slice(7);
+        document.getElementById("p5").innerHTML=d4;
+
+        document.getElementById("original3").innerHTML=d;
+        var s1=d.substr(3,20);
+        document.getElementById("p12").innerHTML=s1;
+        var s2=d.substr(-10,-7);
+        document.getElementById("p13").innerHTML=s2;
+        var s3=d.substr(-10);
+        document.getElementById("p14").innerHTML=s3;
+        var s4=d.substr(7);
+        document.getElementById("p15").innerHTML=s4;
+        // alert(j.length);
+        // alert(j.toLocaleLowerCase());
+        // alert(j.toLocaleUpperCase());
+        // alert(j.toString());
+        // 
+        // alert(j.substring(2,7));
+        // alert(j.substr(3,8));
+        // for(var i=0;i<j.length;i++)
+        // {
+        //     alert(j.charAt(i));
+        // }
+        // alert(j.lastIndexOf(3,4))
+      
+
+    </script>
+</body>
+</html>

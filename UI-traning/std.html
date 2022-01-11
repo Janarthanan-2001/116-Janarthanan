@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Document</title>
+   
+</head>
+<body>
+    <script>
+        const stdDt={id="0",stdName="xx ",gender="xx "};
+        function submitData()
+        {
+            stdDt.id=document.getElementById("num").value;
+            stdDt.stdName=document.getElementById("sname").value;
+            stdDt.gender=document.getElementById("g").value;
+            localStorage.setItem("num",stdDt.id);
+            localStorage.setItem("sname",stdDt.stdName);
+            localStorage.setItem("g",stdDt.gender);
+           
+        }
+        function showData()
+        {
+            window.location.href="showdetails.html";
+            var sd=localStorage.getItem("num");
+            var sn=localStorage.getItem("sname");
+            var sg=localStorage.getItem("g");
+
+        }
+    </script>
+
+    <form action="">
+        <label for="f1">Enter ID</label>
+        <input type="number" name="num" id="num"/><br>
+        <label for="f2">Student Name</label>
+        <input type="text" name="sname" id="sname"><br>
+        <label for="f3">Gender</label>
+        <input type="text" name="g" id="g"><br>
+        <button onclick="submitData()" >Submit
+        <a href="showdetails.html"></a>
+        </button>
+    </form>
+</body>
+</html>

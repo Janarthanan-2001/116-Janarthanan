@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          a:hover{
+            font-size: larger;
+        }
+        a[href^="https"]
+        {
+            color: red;
+        }
+        a[href$="html"]
+        {
+            color: grey;
+        }
+        p~ul    {
+            color: crimson;
+        }
+        p:first-child{
+            color: darkolivegreen;
+        }
+        p:last-child{
+            color: darksalmon;
+        }
+        p:last-of-type{
+            background-color: gold;
+        }
+        :not(p){
+            border: 5px solid rgba(16, 218, 124, 0.781);
+        }
+    </style>
+</head>
+<body>
+
+    <a href="https://www.google.com">google</a> 
+    <hr/>
+    <a href="https://www.yahoo.com">Yahoo</a> 
+    <hr>
+    <a href="Login.html">Login</a>
+    <hr>
+    <ul>
+        <li>One</li>
+        <li>Two</li>
+    </ul>
+    <p>
+        Para 1
+    <ul>
+    <li>One</li>
+    <li>Two</li>
+    </ul>
+    </p>
+    <hr>
+    <div> 
+        <p>P is child of div</p>
+        <p>One more child of div</p>
+        <span>
+            This is content of span
+            <p>I am child of span</p>
+        </span> 
+     </div>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+    crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            $('#b1').click(function(){
+
+            // $('ul li:first').hide();//only grapes hides
+            //$('ul li:first-child').hide(); //grapes and idli
+            $('ul li:nth-child(2)').hide(); //nth child
+            });
+
+        });
+
+        // $(doument).ready(function(){
+            //one way to hide and show
+            // $('#b1').click(function(){
+            //     $('p').hide();
+            // });
+            // $('#b2').click(function(){
+            //     $('p').show();
+            // });
+            // second way to hide
+            // $('h1').hide();
+            // $('p').hide();
+
+            // $('*').click(function(){
+            // $(this).hide();
+            // });
+            
+
+
+        // });
+        // $(document).ready(function(){
+        //     $('h1').click(function(){
+        //     // $(".c1").css('background-color','red');
+        //     $(".c1").css('color','Blue');
+        //     // $('.c1').css('fontSize','20px');
+        //     $('.c1').css('font-style','bold');
+
+        //     });
+        //     $(":button").click(function(){
+        //     //code 1
+        //     //:button means input type button and other button
+        //     alert("Both are button --- input type button and other button");
+        //     });
+        //     $(":submit").click(function(){
+        //     //code 2
+        //     //all input type-- button and  submit clicked
+        //     alert("input type submit clicked");
+        //     });
+            
+
+        // });
+        
+    </script>
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- code 1 and 2
+    <button id="b1" class="c1">click here </button> 
+    code 1
+    <input type="button" class="c1" value="submit" >
+     code 2
+    <h1>JQuery</h1>  
+    <input type="submit" class="c1" value="submit button"> 
+    <p>begin with jquery</p>
+      <button id="b2">click here to show a paragraph</button> 
+    <hr>
+    <h1>JQuery</h1>
+    <p>begin with jquery</p>
+    <hr> 
+    <h1>JQuery</h1>
+    <p> this begin with jquery</p> -->
+    <ul>
+        <li>Grapes</li>
+        <li>Banana</li>
+        <li>Mango</li>
+        <li>Kivi</li>
+
+
+    </ul>
+    <button id="b1">Click</button>
+
+    <ul>
+        <li>Idli</li>
+        <li>Dosa</li>
+        <li>Uttapam</li>
+        <li>Somthing</li>
+
+    </ul>
+
+    
+</body>
+</html>
